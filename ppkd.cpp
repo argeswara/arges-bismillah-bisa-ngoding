@@ -469,3 +469,67 @@ int main (){
     }
     cout << sum << " " ;
 }
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+    int i = 0;
+    while (i < 10){
+        if (i % 3 == 0) {
+            cout << i ;
+        }
+        i++;
+    }
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Variabel untuk menyimpan angka
+    int nomer;
+    // Variabel boolean untuk menentukan apakah program diulang
+    bool ulang = true;
+    
+    // Perulangan selama repeat bernilai true
+    while (ulang) {
+
+        // Meminta pengguna memasukkan angka
+        cout << "Enter a number: ";
+        cin >> nomer;
+        // Menampilkan angka yang dimasukkan
+        cout << "Your number is " << nomer << endl;
+        // Menanyakan apakah ingin mengulang
+        cout << "Want to repeat? (1: yes / 0: no): ";
+        cin >> ulang;
+
+        cout << endl;
+    }
+
+    // Ditampilkan ketika repeat bernilai false
+    cout << "Program ends" << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int nomer;
+    int baris;
+    cout << "Mau berapa banyak baris = " ;
+    cin >> baris;
+
+
+    int jumlahTotal = 0;
+
+    for (int i = 1; i <= baris; i++){
+        cout << "Masukan nomor = " ;
+        cin >> nomer;
+        jumlahTotal += nomer;
+    }cout << "Hasilnya adalah " << jumlahTotal ;
+}
