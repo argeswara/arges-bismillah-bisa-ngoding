@@ -533,3 +533,118 @@ int main(){
         jumlahTotal += nomer;
     }cout << "Hasilnya adalah " << jumlahTotal ;
 }
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Inisialisasi array 2 dimensi dengan 2 baris dan 4 kolom
+    string letters[2][4] = {
+        {"A", "B", "C", "D"},
+        {"E", "F", "G", "H"}
+    };
+    
+    // Outer loop untuk indeks baris (0 sampai 1)
+    for(int i = 0; i < 2; i++) {
+        // Inner loop untuk indeks kolom (0 sampai 3)
+        for(int j = 0; j < 4; j++) {
+            // Mencetak karakter dan memberikan spasi
+            cout << letters[i][j] << " ";
+        }
+        // Pindah baris setelah 4 kolom tercetak
+        cout << endl;
+    }
+    
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+// Menghitung luas lingkaran
+double circleArea(double r) {
+    return 3.14159 * r * r;
+}
+
+// Menghitung volume tabung dengan memanggil fungsi circleArea
+double cylinderVolume(double r, double h) {
+    return circleArea(r) * h;
+}
+
+// Menghitung volume kerucut dengan memanggil fungsi cylinderVolume
+double coneVolume(double r, double h) {
+    return cylinderVolume(r, h) / 3.0;
+}
+
+int main() {
+    double radius = 10.0;
+    double height = 30.0;
+    cout << "Circle area = " << circleArea(radius) << endl;
+    cout << "Cylinder volume = " << cylinderVolume(radius, height) << endl;
+    cout << "Cone volume = " << coneVolume(radius, height) << endl;
+    
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+// Fungsi faktorial menggunakan perulangan (iteratif)
+int fact(int n) {
+    int hasil = 1;
+    for(int i = 1; i <= n; i++) {
+        hasil *= i; // Mengalikan 1 * 2 * 3 ... dst
+    }
+    return hasil;
+}
+
+int main() {
+    int result = fact(5) + fact(4);
+    cout << "The result is " << result << endl;
+    
+    return 0;
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Fungsi pertama: menerima parameter (angka, angka, angka)
+void printDate(int day, int month, int year) {
+    // Array untuk mengubah angka bulan menjadi teks
+    string namaBulan[] = {"", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    cout << "The date is " << day << " " << namaBulan[month] << " " << year << endl;
+}
+
+// Fungsi kedua: menerima parameter (angka, teks, angka)
+void printDate(int day, string month, int year) {
+    cout << "The date is " << day << " " << month << " " << year << endl;
+}
+
+int main() {
+    printDate(5, 12, 2026);
+    printDate(7, "July", 2025);
+    
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+// Fungsi faktorial menggunakan rekursi
+int fact(int n) {
+    // Base case: jika angka mencapai 1 atau kurang, hentikan rekursi
+    if (n <= 1) {
+        return 1;
+    } else {
+        // Recursive step: n dikali faktorial(n-1)
+        return n * fact(n - 1);
+    }
+}
+
+int main() {
+    int result = fact(5) + fact(4);
+    cout << "The result is " << result << endl;
+    
+    return 0;
+}
