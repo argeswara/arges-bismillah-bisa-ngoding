@@ -1,57 +1,57 @@
-//Toki, Modul 6 - Larik Array
-// #include <iostream>
-// using namespace std;
+Toki, Modul 6 - Larik Array
+#include <iostream>
+using namespace std;
 
-// int main (){
-//     int luas1 = 225 * 335;
-//     int luas2 = 215 * 394;
-//     int luas3 = 198 * 400;
-//     int luas4 = 314 * 289;
-//     int luas5 = 299 * 278;
+int main (){
+    int luas1 = 225 * 335;
+    int luas2 = 215 * 394;
+    int luas3 = 198 * 400;
+    int luas4 = 314 * 289;
+    int luas5 = 299 * 278;
 
-//     int hasil = 0;
+    int hasil = 0;
 
-//     if (luas1 >= 80000){
-//         hasil++;
-//     }
-//     if (luas2 >= 80000){
-//         hasil++;
-//     }
-//     if (luas3 >= 80000){
-//         hasil++;
-//     }
-//     if (luas4 >= 80000){
-//         hasil++;
-//     }
-//     if (luas5 >= 80000){
-//         hasil++;
-//     }
+    if (luas1 >= 80000){
+        hasil++;
+    }
+    if (luas2 >= 80000){
+        hasil++;
+    }
+    if (luas3 >= 80000){
+        hasil++;
+    }
+    if (luas4 >= 80000){
+        hasil++;
+    }
+    if (luas5 >= 80000){
+        hasil++;
+    }
 
-//     cout << hasil ;
-// }
+    cout << hasil ;
+}
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main(){
-//     int luas[5] ;
-//     luas[1] = 225 * 335;
-//     luas[2] = 215 * 394;
-//     luas[3] = 198 * 400;
-//     luas[4] = 314 * 289;
-//     luas[5] = 299 * 278;
+int main(){
+    int luas[5] ;
+    luas[1] = 225 * 335;
+    luas[2] = 215 * 394;
+    luas[3] = 198 * 400;
+    luas[4] = 314 * 289;
+    luas[5] = 299 * 278;
 
-//     int hasil = 0;
+    int hasil = 0;
 
-//     for (int i = 0; i < 5; i++){
-//         if (luas[i] >= 80000) {
-//             hasil++;
-//         }
-//     }
-//     cout << hasil << endl;
-// }
+    for (int i = 0; i < 5; i++){
+        if (luas[i] >= 80000) {
+            hasil++;
+        }
+    }
+    cout << hasil << endl;
+}
 
-//
+
 #include <iostream>
 using namespace std;
 
